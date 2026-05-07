@@ -7,7 +7,7 @@
 				"type": "ForEach",
 				"dependsOn": [
 					{
-						"activity": "validate if netflix_title file present",
+						"activity": "validate if netflix_title file is available",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -97,7 +97,7 @@
 				}
 			},
 			{
-				"name": "validate if netflix_title file present",
+				"name": "validate if netflix_title file is available",
 				"type": "Validation",
 				"dependsOn": [],
 				"userProperties": [],
