@@ -1,0 +1,13 @@
+{
+	"name": "Gen_SQL_linkedService_DS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Gen_SQL_LS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,21 @@
+{
+	"name": "OnPremSQLServer_LS",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "TALIB_ANSARI\\SQLEXPRESS01",
+			"database": "Test_DB",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "Talib_Ansari\\talib",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI0MDk2YzAxMy00NDdmLTRkYzQtOGRhZC0wYmQyMmU0MDY0NWEiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "SelfHostedIR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

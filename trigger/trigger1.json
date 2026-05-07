@@ -1,0 +1,24 @@
+{
+	"name": "trigger1",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "Event_trigger_pipeline",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/lending/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/195d6238-2add-4130-a2da-fd2d5420b7c2/resourceGroups/TalibAnsariResourceGroup/providers/Microsoft.Storage/storageAccounts/talibstorageaccount",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

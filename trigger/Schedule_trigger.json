@@ -1,0 +1,30 @@
+{
+	"name": "Schedule_trigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "Incremental pipeline",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Month",
+				"interval": 1,
+				"startTime": "2026-04-25T17:54:00",
+				"endTime": "2026-04-30T17:54:00",
+				"timeZone": "India Standard Time",
+				"schedule": {
+					"monthDays": [
+						19
+					]
+				}
+			}
+		}
+	}
+}

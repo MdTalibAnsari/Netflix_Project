@@ -1,0 +1,17 @@
+{
+	"name": "Onprem_Airlinefiles_LS",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "FileServer",
+		"typeProperties": {
+			"host": "C:\\ADF_Airline_Project",
+			"userId": "talibansari1205@gmail.com",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJiYzhhZGU4OC03YjIxLTRmYmQtYjQ0Ny1jZWQ5MzExYmE2YmUiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "SelfHostedIR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

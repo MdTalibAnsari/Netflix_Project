@@ -1,0 +1,37 @@
+{
+	"name": "Test_GitHub_Data",
+	"properties": {
+		"activities": [
+			{
+				"name": "Web1",
+				"type": "WebActivity",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"method": "GET",
+					"url": "https://raw.githubusercontent.com/anshlambagit/AnshLambaYoutube/refs/heads/main/ADF_Project/DimAirport.json"
+				}
+			}
+		],
+		"variables": {
+			"V_now": {
+				"type": "String"
+			}
+		},
+		"folder": {
+			"name": "Airline_Project"
+		},
+		"annotations": [],
+		"lastPublishTime": "2026-05-03T16:23:40Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

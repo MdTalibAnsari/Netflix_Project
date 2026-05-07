@@ -1,0 +1,36 @@
+{
+	"name": "SQL_SCDType2_Employees",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SQLDatabaseLS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Name",
+				"type": "varchar"
+			},
+			{
+				"name": "City",
+				"type": "varchar"
+			},
+			{
+				"name": "Active_Flag",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Employees_Type2"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,21 @@
+{
+	"name": "TalibAnsariADF",
+	"properties": {
+		"globalParameters": {
+			"SchemaNameGlobalParam": {
+				"type": "string",
+				"value": "saleslt"
+			}
+		},
+		"trustModeClaimForMi": {
+			"value": "Enabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "def2fe41-0ba4-4457-813b-c46bf6ca24c9",
+		"tenantId": "212f15fa-c976-42e9-858f-66c495dd1cc5"
+	}
+}

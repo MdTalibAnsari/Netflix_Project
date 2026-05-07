@@ -1,0 +1,17 @@
+{
+	"name": "SelfHostedSQLServerLS",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=True;data source=TALIB_ANSARI\\SQLEXPRESS01;initial catalog=Test_DB",
+			"userName": "TALIB_ANSARI\\talib",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJlNmI3ZWZjYS04MTNlLTQwZmItYWUyOS1hY2JiOThiN2RkY2EiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "SelfHostedIR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

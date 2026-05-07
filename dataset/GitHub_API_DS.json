@@ -1,0 +1,23 @@
+{
+	"name": "GitHub_API_DS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "GitHub_API_LS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "/anshlambagit/AzureProjectWithCICD/refs/heads/main/Resources/events.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
